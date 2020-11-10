@@ -1,0 +1,1136 @@
+{
+  "contractName": "LibExchangeErrors",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/mohit/Desktop/dexhigh/countbapp/contracts/lib/LibExchangeErrors.sol\":\"LibExchangeErrors\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/mohit/Desktop/dexhigh/countbapp/contracts/lib/LibExchangeErrors.sol\":{\"keccak256\":\"0xcb5b0d2a9b64b41c1459d526824dfa7fe71b11fe1642c870c6eb99ade63c6c67\",\"urls\":[\"bzzr://0ca131a7f5630975278b6ae674ab60d7321207bfbb6f7d39ea1552d317add9fa\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a723058208a64149e7d12e28b19768f1d074c0a7f1fd9c2da37c40d00e7d92f74dd2cdfbe0029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a723058208a64149e7d12e28b19768f1d074c0a7f1fd9c2da37c40d00e7d92f74dd2cdfbe0029",
+  "sourceMap": "644:984:11:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;644:984:11;;;;;;;",
+  "deployedSourceMap": "644:984:11:-;;;;;",
+  "source": "/*\n\n    Copyright 2018 The Hydro Protocol Foundation\n\n    Licensed under the Apache License, Version 2.0 (the \"License\");\n    you may not use this file except in compliance with the License.\n    You may obtain a copy of the License at\n\n        http://www.apache.org/licenses/LICENSE-2.0\n\n    Unless required by applicable law or agreed to in writing, software\n    distributed under the License is distributed on an \"AS IS\" BASIS,\n    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n    See the License for the specific language governing permissions and\n    limitations under the License.\n\n*/\n\npragma solidity 0.4.24;\n\ncontract LibExchangeErrors {\n    string constant INVALID_TRADER = \"INVALID_TRADER\";\n    string constant INVALID_SENDER = \"INVALID_SENDER\";\n    // Taker order and maker order can't be matched\n    string constant INVALID_MATCH = \"INVALID_MATCH\";\n    string constant INVALID_SIDE = \"INVALID_SIDE\";\n    // Signature validation failed\n    string constant INVALID_ORDER_SIGNATURE = \"INVALID_ORDER_SIGNATURE\";\n    // Taker order is not valid\n    string constant ORDER_IS_NOT_FILLABLE = \"ORDER_IS_NOT_FILLABLE\";\n    string constant MAKER_ORDER_CAN_NOT_BE_MARKET_ORDER = \"MAKER_ORDER_CAN_NOT_BE_MARKET_ORDER\";\n    string constant TRANSFER_FROM_FAILED = \"TRANSFER_FROM_FAILED\";\n    string constant MAKER_ORDER_OVER_MATCH = \"MAKER_ORDER_OVER_MATCH\";\n    string constant TAKER_ORDER_OVER_MATCH = \"TAKER_ORDER_OVER_MATCH\";\n    string constant ORDER_VERSION_NOT_SUPPORTED = \"ORDER_VERSION_NOT_SUPPORTED\";\n\n    string constant MAKER_ONLY_ORDER_CANNOT_BE_TAKER = \"MAKER_ONLY_ORDER_CANNOT_BE_TAKER\";\n}",
+  "sourcePath": "/home/mohit/Desktop/dexhigh/countbapp/contracts/lib/LibExchangeErrors.sol",
+  "ast": {
+    "absolutePath": "/home/mohit/Desktop/dexhigh/countbapp/contracts/lib/LibExchangeErrors.sol",
+    "exportedSymbols": {
+      "LibExchangeErrors": [
+        2770
+      ]
+    },
+    "id": 2771,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2733,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "619:23:11"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2770,
+        "linearizedBaseContracts": [
+          2770
+        ],
+        "name": "LibExchangeErrors",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 2736,
+            "name": "INVALID_TRADER",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "677:49:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2734,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "677:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "494e56414c49445f545241444552",
+              "id": 2735,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "710:16:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_527d0c7bdc5507e0803daf38073f3fe37f4c713dd422de28e8229b7611f2a1ab",
+                "typeString": "literal_string \"INVALID_TRADER\""
+              },
+              "value": "INVALID_TRADER"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2739,
+            "name": "INVALID_SENDER",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "732:49:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2737,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "732:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "494e56414c49445f53454e444552",
+              "id": 2738,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "765:16:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_db738cfea6a49ef4e8f6a59c278add0dfddfdb2462adac18e44f8df0bef7fd64",
+                "typeString": "literal_string \"INVALID_SENDER\""
+              },
+              "value": "INVALID_SENDER"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2742,
+            "name": "INVALID_MATCH",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "839:47:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2740,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "839:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "494e56414c49445f4d41544348",
+              "id": 2741,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "871:15:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_a2c90906fdfd376f9c8eb079893443d580b43d20a18008148b28d1c112845cd4",
+                "typeString": "literal_string \"INVALID_MATCH\""
+              },
+              "value": "INVALID_MATCH"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2745,
+            "name": "INVALID_SIDE",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "892:45:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2743,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "892:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "494e56414c49445f53494445",
+              "id": 2744,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "923:14:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_ec659d9ae2dcd9b8e35d05ded2294dbbf03575c4de43cc4b8ca2e001de7e35b8",
+                "typeString": "literal_string \"INVALID_SIDE\""
+              },
+              "value": "INVALID_SIDE"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2748,
+            "name": "INVALID_ORDER_SIGNATURE",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "978:67:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2746,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "978:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "494e56414c49445f4f524445525f5349474e4154555245",
+              "id": 2747,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1020:25:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_475edbb345a078805cddf3c6e244556950bcf7225edf6d1d01faa4f525052416",
+                "typeString": "literal_string \"INVALID_ORDER_SIGNATURE\""
+              },
+              "value": "INVALID_ORDER_SIGNATURE"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2751,
+            "name": "ORDER_IS_NOT_FILLABLE",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1083:63:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2749,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1083:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "4f524445525f49535f4e4f545f46494c4c41424c45",
+              "id": 2750,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1123:23:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_092c025a8550020187f23a9883e548a678edc2dc70f8db82b71c42948addca87",
+                "typeString": "literal_string \"ORDER_IS_NOT_FILLABLE\""
+              },
+              "value": "ORDER_IS_NOT_FILLABLE"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2754,
+            "name": "MAKER_ORDER_CAN_NOT_BE_MARKET_ORDER",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1152:91:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2752,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1152:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "4d414b45525f4f524445525f43414e5f4e4f545f42455f4d41524b45545f4f52444552",
+              "id": 2753,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1206:37:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_ec5a306be6ee6c05f8f431298d90690b13d294dfb2dac246e24a2621d2ebcc4c",
+                "typeString": "literal_string \"MAKER_ORDER_CAN_NOT_BE_MARKET_ORDER\""
+              },
+              "value": "MAKER_ORDER_CAN_NOT_BE_MARKET_ORDER"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2757,
+            "name": "TRANSFER_FROM_FAILED",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1249:61:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2755,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1249:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "5452414e534645525f46524f4d5f4641494c4544",
+              "id": 2756,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1288:22:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_77631768048ee92f9dcf4b9b9d762877d6b9723214862c733f0596708fc219b7",
+                "typeString": "literal_string \"TRANSFER_FROM_FAILED\""
+              },
+              "value": "TRANSFER_FROM_FAILED"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2760,
+            "name": "MAKER_ORDER_OVER_MATCH",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1316:65:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2758,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1316:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "4d414b45525f4f524445525f4f5645525f4d41544348",
+              "id": 2759,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1357:24:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_3bb5f28e005cd665fa3e43bb4948c017e6c7be29a8ec93397add0c0f4c24168c",
+                "typeString": "literal_string \"MAKER_ORDER_OVER_MATCH\""
+              },
+              "value": "MAKER_ORDER_OVER_MATCH"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2763,
+            "name": "TAKER_ORDER_OVER_MATCH",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1387:65:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2761,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1387:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "54414b45525f4f524445525f4f5645525f4d41544348",
+              "id": 2762,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1428:24:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_b074634694e1b310f931f9bae44b5ae4714c6816fda450d8820e774ee61fbca7",
+                "typeString": "literal_string \"TAKER_ORDER_OVER_MATCH\""
+              },
+              "value": "TAKER_ORDER_OVER_MATCH"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2766,
+            "name": "ORDER_VERSION_NOT_SUPPORTED",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1458:75:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2764,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1458:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "4f524445525f56455253494f4e5f4e4f545f535550504f52544544",
+              "id": 2765,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1504:29:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_20fd5f08435f534dd729f50fcac89f5d58e206d33c498e4502d59004d939895c",
+                "typeString": "literal_string \"ORDER_VERSION_NOT_SUPPORTED\""
+              },
+              "value": "ORDER_VERSION_NOT_SUPPORTED"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2769,
+            "name": "MAKER_ONLY_ORDER_CANNOT_BE_TAKER",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1540:85:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2767,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1540:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "4d414b45525f4f4e4c595f4f524445525f43414e4e4f545f42455f54414b4552",
+              "id": 2768,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1591:34:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_98e71d8722215594e75f47141b8148c3e267fade55bbefacb5ed8b689cd66b96",
+                "typeString": "literal_string \"MAKER_ONLY_ORDER_CANNOT_BE_TAKER\""
+              },
+              "value": "MAKER_ONLY_ORDER_CANNOT_BE_TAKER"
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 2771,
+        "src": "644:984:11"
+      }
+    ],
+    "src": "619:1009:11"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/mohit/Desktop/dexhigh/countbapp/contracts/lib/LibExchangeErrors.sol",
+    "exportedSymbols": {
+      "LibExchangeErrors": [
+        2770
+      ]
+    },
+    "id": 2771,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2733,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "619:23:11"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 2770,
+        "linearizedBaseContracts": [
+          2770
+        ],
+        "name": "LibExchangeErrors",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 2736,
+            "name": "INVALID_TRADER",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "677:49:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2734,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "677:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "494e56414c49445f545241444552",
+              "id": 2735,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "710:16:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_527d0c7bdc5507e0803daf38073f3fe37f4c713dd422de28e8229b7611f2a1ab",
+                "typeString": "literal_string \"INVALID_TRADER\""
+              },
+              "value": "INVALID_TRADER"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2739,
+            "name": "INVALID_SENDER",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "732:49:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2737,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "732:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "494e56414c49445f53454e444552",
+              "id": 2738,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "765:16:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_db738cfea6a49ef4e8f6a59c278add0dfddfdb2462adac18e44f8df0bef7fd64",
+                "typeString": "literal_string \"INVALID_SENDER\""
+              },
+              "value": "INVALID_SENDER"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2742,
+            "name": "INVALID_MATCH",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "839:47:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2740,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "839:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "494e56414c49445f4d41544348",
+              "id": 2741,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "871:15:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_a2c90906fdfd376f9c8eb079893443d580b43d20a18008148b28d1c112845cd4",
+                "typeString": "literal_string \"INVALID_MATCH\""
+              },
+              "value": "INVALID_MATCH"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2745,
+            "name": "INVALID_SIDE",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "892:45:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2743,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "892:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "494e56414c49445f53494445",
+              "id": 2744,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "923:14:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_ec659d9ae2dcd9b8e35d05ded2294dbbf03575c4de43cc4b8ca2e001de7e35b8",
+                "typeString": "literal_string \"INVALID_SIDE\""
+              },
+              "value": "INVALID_SIDE"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2748,
+            "name": "INVALID_ORDER_SIGNATURE",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "978:67:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2746,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "978:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "494e56414c49445f4f524445525f5349474e4154555245",
+              "id": 2747,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1020:25:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_475edbb345a078805cddf3c6e244556950bcf7225edf6d1d01faa4f525052416",
+                "typeString": "literal_string \"INVALID_ORDER_SIGNATURE\""
+              },
+              "value": "INVALID_ORDER_SIGNATURE"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2751,
+            "name": "ORDER_IS_NOT_FILLABLE",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1083:63:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2749,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1083:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "4f524445525f49535f4e4f545f46494c4c41424c45",
+              "id": 2750,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1123:23:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_092c025a8550020187f23a9883e548a678edc2dc70f8db82b71c42948addca87",
+                "typeString": "literal_string \"ORDER_IS_NOT_FILLABLE\""
+              },
+              "value": "ORDER_IS_NOT_FILLABLE"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2754,
+            "name": "MAKER_ORDER_CAN_NOT_BE_MARKET_ORDER",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1152:91:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2752,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1152:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "4d414b45525f4f524445525f43414e5f4e4f545f42455f4d41524b45545f4f52444552",
+              "id": 2753,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1206:37:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_ec5a306be6ee6c05f8f431298d90690b13d294dfb2dac246e24a2621d2ebcc4c",
+                "typeString": "literal_string \"MAKER_ORDER_CAN_NOT_BE_MARKET_ORDER\""
+              },
+              "value": "MAKER_ORDER_CAN_NOT_BE_MARKET_ORDER"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2757,
+            "name": "TRANSFER_FROM_FAILED",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1249:61:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2755,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1249:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "5452414e534645525f46524f4d5f4641494c4544",
+              "id": 2756,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1288:22:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_77631768048ee92f9dcf4b9b9d762877d6b9723214862c733f0596708fc219b7",
+                "typeString": "literal_string \"TRANSFER_FROM_FAILED\""
+              },
+              "value": "TRANSFER_FROM_FAILED"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2760,
+            "name": "MAKER_ORDER_OVER_MATCH",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1316:65:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2758,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1316:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "4d414b45525f4f524445525f4f5645525f4d41544348",
+              "id": 2759,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1357:24:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_3bb5f28e005cd665fa3e43bb4948c017e6c7be29a8ec93397add0c0f4c24168c",
+                "typeString": "literal_string \"MAKER_ORDER_OVER_MATCH\""
+              },
+              "value": "MAKER_ORDER_OVER_MATCH"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2763,
+            "name": "TAKER_ORDER_OVER_MATCH",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1387:65:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2761,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1387:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "54414b45525f4f524445525f4f5645525f4d41544348",
+              "id": 2762,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1428:24:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_b074634694e1b310f931f9bae44b5ae4714c6816fda450d8820e774ee61fbca7",
+                "typeString": "literal_string \"TAKER_ORDER_OVER_MATCH\""
+              },
+              "value": "TAKER_ORDER_OVER_MATCH"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2766,
+            "name": "ORDER_VERSION_NOT_SUPPORTED",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1458:75:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2764,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1458:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "4f524445525f56455253494f4e5f4e4f545f535550504f52544544",
+              "id": 2765,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1504:29:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_20fd5f08435f534dd729f50fcac89f5d58e206d33c498e4502d59004d939895c",
+                "typeString": "literal_string \"ORDER_VERSION_NOT_SUPPORTED\""
+              },
+              "value": "ORDER_VERSION_NOT_SUPPORTED"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "id": 2769,
+            "name": "MAKER_ONLY_ORDER_CANNOT_BE_TAKER",
+            "nodeType": "VariableDeclaration",
+            "scope": 2770,
+            "src": "1540:85:11",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2767,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "1540:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "4d414b45525f4f4e4c595f4f524445525f43414e4e4f545f42455f54414b4552",
+              "id": 2768,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1591:34:11",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_98e71d8722215594e75f47141b8148c3e267fade55bbefacb5ed8b689cd66b96",
+                "typeString": "literal_string \"MAKER_ONLY_ORDER_CANNOT_BE_TAKER\""
+              },
+              "value": "MAKER_ONLY_ORDER_CANNOT_BE_TAKER"
+            },
+            "visibility": "internal"
+          }
+        ],
+        "scope": 2771,
+        "src": "644:984:11"
+      }
+    ],
+    "src": "619:1009:11"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.1",
+  "updatedAt": "2020-11-05T23:23:08.778Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
